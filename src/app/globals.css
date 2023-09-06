@@ -60,7 +60,6 @@
   }
 
   .active{
-    @apply text-accent;
+    @apply text-accent-default;
   }
-
 }
