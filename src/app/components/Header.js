@@ -47,11 +47,19 @@ export default function Header() {
           </div>
         </div>
         {/*Regular Nav */}
-        <nav>
+        <nav className={`
+              ${nav ? 'max-hmax py-8 px-4 xl:py-0':'max-h-0 xl:max-h-max'} 
+              flex flex-col w-full bg-white gap-y-6 overflow-hidden font-bold xl:font-medium 
+              xl:flex-row xl:w-max xl:gap-x-8 xl:h-max xl:bg-transparent xl:pb-0 transition-all duration-150 
+              text-center xl:text-left uppercase text-sm xl:text-[15px] xl:normal-case`
+            }>
           <Link className='cursor-pointer' to='home' activeClass='active' smooth={desktopMode} spy={true}>Inicio</Link>
           <Link className='cursor-pointer' to='careers' activeClass='active' smooth={desktopMode} spy={true}>Carreras</Link> 
           <Link className='cursor-pointer' to='about' activeClass='active' smooth={desktopMode} spy={true}>Sedes</Link> 
-          <Link className='cursor-pointer' to='about' activeClass='active' smooth={desktopMode} spy={true}>Sedes</Link> 
+          <Link className='cursor-pointer' to='why' activeClass='active' smooth={desktopMode} spy={true}>Profesionales</Link> 
+          <Link className='cursor-pointer' to='testimonial' activeClass='active' smooth={desktopMode} spy={true}>Noticias</Link> 
+          <Link className='cursor-pointer' to='contact ' activeClass='active' smooth={desktopMode} spy={true}>RRHH</Link> 
+          <Link className='xl:hidden btn btn-primary btn-sm max-w-[164px] mx-auto' to='/' activeClass='active' smooth={desktopMode} spy={true}>Inscripciones</Link> 
         </nav>
       </div>
     </header>
