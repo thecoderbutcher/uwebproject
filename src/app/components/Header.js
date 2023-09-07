@@ -53,9 +53,9 @@ export default function Header() {
         </div>
         {/*Regular Nav */}
         <nav className={`
-              ${nav ? 'max-hmax py-8 px-4 xl:py-0':'max-h-0 xl:max-h-max'} 
+              ${nav ? 'max-h-max py-8 px-4 xl:py-0':'max-h-0 xl:max-h-max'} 
               flex flex-col w-full bg-white gap-y-6 overflow-hidden font-bold xl:font-medium 
-              xl:flex-row xl:w-max xl:gap-x-8 xl:h-max xl:bg-transparent xl:pb-0 transition-all duration-150 
+              xl:flex-row xl:w-max xl:gap-x-8 xl:h-max xl:bg-transparent xl:pb-0 transition-all duration-150
               text-center xl:text-left uppercase text-sm xl:text-[15px] xl:normal-case`
             }>
           <Link className='cursor-pointer' to='home' activeClass='active' smooth={desktopMode} spy={true}>Inicio</Link>

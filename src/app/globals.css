@@ -28,7 +28,7 @@
   }
 
   .section{
-    @apply w-full h-screem pt-[60px] xl:pt-[120px];
+    @apply w-full h-screen pt-[60px] xl:pt-[120px];
   }
 
   .btn{

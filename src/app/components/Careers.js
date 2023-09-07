@@ -1,5 +1,5 @@
 export default function Careers() {
   return (
-    <div>Careers</div>
+    <section className="h-screen flex items-center bg-yellow-300" id="careers">Careers</section>
   )
 }
