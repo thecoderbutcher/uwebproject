@@ -7,8 +7,10 @@ import { useContext, useEffect, useState } from "react";
 
 //icons
 import {BiMenuAltRight,BiX} from 'react-icons/bi';
+import { SearchContext } from '../context/search';
 
 export default function Header() {
+  const {setSearchActive} = useContext(SearchContext)
   const [header, setHeader] = useState(false);
   const [nav, setNav] = useState(false);
   const desktopMode = useMediaQuery({query:'(min-with: 1300px)'})
@@ -17,6 +19,9 @@ export default function Header() {
     const handleScroll = () => {
       //header
       (window.scrollY > 40) ? setHeader(true):setHeader(false);
+
+      //search 
+      (window.scrollY > 800) ? setSearchActive(true) : setSearchActive(false)
     };
 
     // add event
