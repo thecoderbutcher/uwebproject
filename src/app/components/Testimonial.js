@@ -1,5 +1,7 @@
 export default function Testimonial() {
   return (
-    <div>Testimonial</div>
+    <section className="section flex items-center bg-blue-400" id="testimonial">
+      Testimonial
+    </section>
   )
 }
