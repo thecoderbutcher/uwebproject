@@ -16,7 +16,7 @@ export default function Hero() {
         searchActive ? 
           <div className="fixed top-[80px] z-10 w-full max-w-[1920]"><Search/></div>
           :
-          <div className="mt-12 w-full max-w[1300px] mx-auto"><Search/></div>
+          <div className="-mt-12 w-full max-w[1300px] mx-auto"><Search/></div>
       }
     </section>
   )

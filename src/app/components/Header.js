@@ -18,19 +18,17 @@ export default function Header() {
   useEffect(() => {
     const handleScroll = () => {
       //header
-      (window.scrollY > 40) ? setHeader(true):setHeader(false);
+      setHeader(window.scrollY > 40);
 
       //search 
-      (window.scrollY > 800) ? setSearchActive(true) : setSearchActive(false)
+      setSearchActive(window.scrollY > 800);
     };
 
     // add event
     window.addEventListener('scroll', handleScroll);
 
     //remove event
-    return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
+    return () => { window.removeEventListener('scroll', handleScroll) }
   });
 
   return (
@@ -38,12 +36,7 @@ export default function Header() {
       <div className='xl:container mx-auto flex flex-col xl:flex-row xl:items-center xl:justify-between'>
         <div className='flex justify-between items-center px-4'>
           { /*logo*/}
-          <Link
-            to='home'
-            smooth={desktopMode}
-            spy={true}
-            className='cursor-pointer'
-          >
+          <Link to='home' smooth={desktopMode} spy={true} className='cursor-pointer'>
             <Image src={'/images/escudo.png'} width={41} height={32} alt='Upro Logo'/>
           </Link>
           {/*Nav Open */}
@@ -56,11 +49,11 @@ export default function Header() {
               ${nav ? 'max-h-max py-8 px-4 xl:py-0':'max-h-0 xl:max-h-max'} 
               flex flex-col w-full bg-white gap-y-6 overflow-hidden font-bold xl:font-medium 
               xl:flex-row xl:w-max xl:gap-x-8 xl:h-max xl:bg-transparent xl:pb-0 transition-all duration-150
-              text-center xl:text-left uppercase text-sm xl:text-[15px] xl:normal-case`
+              text-center xl:text-left uppercase text-sm xl:text-[15px] xl:normal-case `
             }>
           <Link className='cursor-pointer' to='home' activeClass='active' smooth={desktopMode} spy={true}>Inicio</Link>
           <Link className='cursor-pointer' to='careers' activeClass='active' smooth={desktopMode} spy={true}>Carreras</Link> 
-          <Link className='cursor-pointer' to='about' activeClass='active' smooth={desktopMode} spy={true}>Sedes</Link> 
+          <Link className='cursor-pointer' to='about' activeClass='active' smooth={desktopMode} spy={true}>About</Link> 
           <Link className='cursor-pointer' to='why' activeClass='active' smooth={desktopMode} spy={true}>Profesionales</Link> 
           <Link className='cursor-pointer' to='testimonial' activeClass='active' smooth={desktopMode} spy={true}>Noticias</Link> 
           <Link className='cursor-pointer' to='contact ' activeClass='active' smooth={desktopMode} spy={true}>RRHH</Link> 
