@@ -2,6 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.rdrDayToday:not(.rdrDayPassive) .rdrInRange ~ .rdrDayNumber span::after,
+.rdrDayToday:not(.rdrDayPassive) .rdrStartEdge ~ .rdrDayNumber span::after,
+.rdrDayToday:not(.rdrDayPassive) .rdrEndEdge ~ .rdrDayNumber span::after,
+.rdrDayToday:not(.rdrDayPassive) .rdrSelected ~ .rdrDayNumber span::after{
+  background-color: #fff !important;
+}
+
+.rdrDayToday .rdrDayNumber span:after{
+  background: #ed1d24 !important;
+}
+
+.rdrMonthAndYearPickers{
+  font-size: 16px;
+}
+
+.rdrDayNumber, .rdrWeekDay{
+  color: #1e1f23 !important;
+  font-weight: 500 !important;
+}
+
 @layer base{
   body{
     @apply text-primary bg-body;
@@ -12,7 +33,7 @@
   }
 
   .h1{
-    @apply text-4xl xl:text-[65px] text-primary xl:leading-[72px] font-extrabold mb-[18px];
+    @apply text-4xl xl:text-[64px] text-primary xl:leading-[72px] font-extrabold mb-[18px];
   }
 
   .h2{
@@ -56,7 +77,7 @@
   }
 
   .btn-accent {
-    @apply bg-accent hover:bg-accent-hover;
+    @apply bg-accent-default  hover:bg-accent-hover;
   }
 
   .active{

@@ -15,7 +15,7 @@ export default function SearchMobile() {
           <HoursSelection />
           {/* btn section*/}
           <div className="flex items-center px-6">
-            <button className="btn btn-sm btn-primary w-[164px] mx-auto">Search</button>
+            <button className="btn btn-sm btn-accent w-[164px] mx-auto">Buscar</button>
           </div>
         </div>
       </div>

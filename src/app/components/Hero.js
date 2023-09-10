@@ -1,10 +1,10 @@
 'use client'
 
-import { useContext } from "react"
+import { useContext } from "react";
 //components
-import Search from "./Search"
+import Search from "./Search";
 //context
-import { SearchContext } from "../context/search"
+import { SearchContext } from "../context/search.js";
 
 export default function Hero() {
   const {searchActive} = useContext(SearchContext);
@@ -16,10 +16,10 @@ export default function Hero() {
       </div>
       {
         searchActive ? 
-          <div className="fixed top-[80px] z-10 w-full max-w-[1920]"><Search/></div>
+          <div className="fixed top-[80px] z-10 w-full max-w-[1920px]"><Search/></div>
           :
-          <div className="-mt-12 w-full max-w[1300px] mx-auto"><Search/></div>
+          <div className="-mt-12 w-full max-w-[1300px] mx-auto"><Search/></div>
       }
     </section>
-  )
+  );
 }

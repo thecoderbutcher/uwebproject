@@ -1,7 +1,7 @@
 // Components
 import Header from "./components/Header";
 import Hero from "./components/Hero";
-import Carees from "./components/Careers";
+import Careers from "./components/Careers";
 import About from "./components/About";
 import Why from "./components/Why";
 import Testimonial from "./components/Testimonial";
@@ -14,7 +14,7 @@ export default function Home() {
     <main className="max-w-[1920px] bg-white mx-auto relative overflow-hidden">
       <Header />
       <Hero />
-      <Carees />
+      <Careers />
       <About />
       <Why />
       <Testimonial />
