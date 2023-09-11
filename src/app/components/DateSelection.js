@@ -27,7 +27,7 @@ export default function DateSelection() {
             <div className="flex flex-col justify-center">
               <div className="flex flex-col xl:flex-row items-center xl:gap-x-2 gap-y-2 xl:gap-y-0">
                 <FaCalendarAlt className="text-accent-default"/>
-                <div className=" text-[15px] uppercase font-bold">Seleccionar Carrera</div>
+                <div className=" text-[15px] uppercase font-bold">Inscripciones</div>
                 </div>
                 <div className="flex items-center gap-x-3 xl:ml-6">
                   <div className="text-[13px] font-medium text-secondary">{format(date[0].startDate, 'dd/MM/yyy')}</div>
@@ -40,7 +40,7 @@ export default function DateSelection() {
           </div>
         </Menu.Button>
         <Menu.Items className="dropdown-menu shadow-lg absolute -top-96 xl:top-[90px] left-1/2 xl:left-0 z-50 transform -translate-x-1/2 xl:-translate-x-0 rounded-[10px] overflow-hidden">
-          <DateRange onChange={(item) => setDate([item.selection])} editableDateInputs={true} moveRangeOnFirstSelection={false} ranges={date} rangeColors={'#ed1d24'} minDate={addDays(new Date(), 0)}/>
+          <DateRange onChange={(item) => setDate([item.selection])} editableDateInputs={true} moveRangeOnFirstSelection={false} ranges={date} rangeColors={['#8C3E71']} minDate={addDays(new Date(), 0)}/>
         </Menu.Items>
       </div>
     </Menu>

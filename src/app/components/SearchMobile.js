@@ -7,15 +7,15 @@ export default function SearchMobile() {
     <div className="xl:hidden font-medium">
       <div className="container mx-auto">
         <div className="flex flex-col gap-y-4">
-          {/* location section*/}
-          <LocationSelection />
           {/* date section*/}
           <DateSelection />
           {/* hour section*/}
           <HoursSelection />
+          {/* location section*/}
+          <LocationSelection />
           {/* btn section*/}
-          <div className="flex items-center px-6">
-            <button className="btn btn-sm btn-accent w-[164px] mx-auto">Buscar</button>
+          <div className="flex items-center px-6"> 
+            <button className="btn btn-sm btn-accent w-[152px] mx-auto">Contacto</button>
           </div>
         </div>
       </div>

@@ -56,7 +56,6 @@ export default function Header() {
           <Link className='cursor-pointer' to='why' activeClass='active' smooth={desktopMode} spy={true}>Profesionales</Link> 
           <Link className='cursor-pointer' to='testimonial' activeClass='active' smooth={desktopMode} spy={true}>Noticias</Link> 
           <Link className='cursor-pointer' to='contact' activeClass='active' smooth={desktopMode} spy={true}>RRHH</Link> 
-          <Link className='xl:hidden btn btn-primary btn-sm max-w-[164px] mx-auto' to='/' activeClass='active' smooth={desktopMode} spy={true}>Inscripciones</Link> 
           <SearchMobile/>
         </nav>
       </div>
