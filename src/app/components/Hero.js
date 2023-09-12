@@ -41,7 +41,7 @@ export default function Hero() {
               viewport={{once: false, amount:0.8}}
               className="flex gap-x-3 justify-center xl:justify-start">
               <button className="btn-cta">
-                <Image src={'/icons/playstore-btn.svg'} width={132} height={36} alt=""/>
+                <Image src={'/images/phone.svg'} width={132} height={36} alt=""/>
               </button>
               <button className="btn-cta">
                 <Image src={'/icons/appstore-btn.svg'} width={132} height={36} alt=""/>
