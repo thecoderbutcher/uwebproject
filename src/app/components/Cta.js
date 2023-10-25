@@ -16,8 +16,8 @@ export default function Cta() {
           className="flex-1 flex justify-center order-1 md:order-none"
         >
           <Image
-            src={'/images/phone.svg'}
-            width={320}
+            src={'/images/uprofy.png'}
+            width={640}
             height={640}
             alt="Uprofy"
           >
